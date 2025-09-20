@@ -39,29 +39,29 @@ CREATE TABLE professor (
 );
 
 -- ONGs
-INSERT INTO ong (nome) VALUES ('ONG Esperança');
+INSERT INTO ong (nome) VALUES ('ONG Esperanca');
 INSERT INTO ong (nome) VALUES ('ONG Futuro Melhor');
 
 -- Professores (2 por ONG)
-INSERT INTO professor (idong, nome, materia) VALUES (1, 'Ana Souza', 'Matemática');
-INSERT INTO professor (idong, nome, materia) VALUES (1, 'Carlos Lima', 'Português');
-INSERT INTO professor (idong, nome, materia) VALUES (2, 'Fernanda Alves', 'Inglês');
-INSERT INTO professor (idong, nome, materia) VALUES (2, 'João Pereira', 'Informática');
+INSERT INTO professor (idong, nome, materia) VALUES (1, 'Ana Souza', 'Matematica');
+INSERT INTO professor (idong, nome, materia) VALUES (1, 'Carlos Lima', 'Portugues');
+INSERT INTO professor (idong, nome, materia) VALUES (2, 'Fernanda Alves', 'Ingles');
+INSERT INTO professor (idong, nome, materia) VALUES (2, 'Joao Pereira', 'Informatica');
 
--- Voluntários (2 por ONG)
-INSERT INTO voluntario (idong, nome, depto) VALUES (1, 'Mariana Costa', 'Administração');
-INSERT INTO voluntario (idong, nome, depto) VALUES (1, 'Rafael Silva', 'Logística');
+-- Voluntarios (2 por ONG)
+INSERT INTO voluntario (idong, nome, depto) VALUES (1, 'Mariana Costa', 'Administracao');
+INSERT INTO voluntario (idong, nome, depto) VALUES (1, 'Rafael Silva', 'Logistica');
 INSERT INTO voluntario (idong, nome, depto) VALUES (2, 'Beatriz Santos', 'RH');
 INSERT INTO voluntario (idong, nome, depto) VALUES (2, 'Lucas Martins', 'Financeiro');
 
--- Alunos (3 por ONG, área de interesse ligada à matéria dos professores da mesma ONG)
+-- Alunos (3 por ONG, area de interesse ligada a materia dos professores da mesma ONG)
 
--- ONG 1 (Matemática / Português)
-INSERT INTO aluno (idong, nome, area_interesse) VALUES (1, 'Paulo Henrique', 'Matemática');
-INSERT INTO aluno (idong, nome, area_interesse) VALUES (1, 'Juliana Rocha', 'Português');
-INSERT INTO aluno (idong, nome, area_interesse) VALUES (1, 'Gabriel Oliveira', 'Matemática');
+-- ONG 1 (Matematica / Portugues)
+INSERT INTO aluno (idong, nome, area_interesse) VALUES (1, 'Paulo Henrique', 'Matematica');
+INSERT INTO aluno (idong, nome, area_interesse) VALUES (1, 'Juliana Rocha', 'Portugues');
+INSERT INTO aluno (idong, nome, area_interesse) VALUES (1, 'Gabriel Oliveira', 'Matematica');
 
--- ONG 2 (Inglês / Informática)
-INSERT INTO aluno (idong, nome, area_interesse) VALUES (2, 'Camila Ferreira', 'Inglês');
-INSERT INTO aluno (idong, nome, area_interesse) VALUES (2, 'Felipe Andrade', 'Informática');
-INSERT INTO aluno (idong, nome, area_interesse) VALUES (2, 'Aline Souza', 'Inglês');
+-- ONG 2 (Ingles / Informatica)
+INSERT INTO aluno (idong, nome, area_interesse) VALUES (2, 'Camila Ferreira', 'Ingles');
+INSERT INTO aluno (idong, nome, area_interesse) VALUES (2, 'Felipe Andrade', 'Informatica');
+INSERT INTO aluno (idong, nome, area_interesse) VALUES (2, 'Aline Souza', 'Ingles');
