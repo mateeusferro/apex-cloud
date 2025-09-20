@@ -84,7 +84,7 @@ const fetchData = async () => {
         loading.value = true
         error.value = null
 
-        const response = await fetch('http://3.140.255.212:8080/voluntario')
+        const response = await fetch('http://18.118.50.3:8080/voluntario')
         if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`)
         dados.value = await response.json()
     } catch (err) {
