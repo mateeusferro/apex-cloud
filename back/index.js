@@ -1,7 +1,10 @@
 import express from "express"
+import cors from "cors"
 import { DBConnection } from "./db_connect.js"
 const app = express()
 const port = process.env.PORT || 8080
+
+app.use(cors())
 
 app.get('/professor', async (req, res) => {
     const db = new DBConnection();
